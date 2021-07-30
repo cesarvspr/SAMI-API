@@ -12,6 +12,15 @@ $ docker build . -t <your-username>/sami-api
 $ docker run -p <PREFFERED PORT>:3000 cesarvspr/sami-api 
 
 ```
+#### Customer Routes
+
+- GET /beneficiaries
+- GET /beneficiaries/:id
+- POST /beneficiaries
+- PUT /beneficiaries/:id
+- DELETE /beneficiaries/:id
+
+
 ## Testes:
 
 
