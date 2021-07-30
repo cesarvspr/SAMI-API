@@ -6,11 +6,10 @@ const config = require('./config');
 
 const server = restify.createServer();
 
-// Middleware
+
 server.use(restify.plugins.bodyParser());
 
-// Protect Routes
-//
+
 server.listen(config.PORT, () => {
   mongoose.set("useFindAndModify", false);
   mongoose.connect(config.MONGODB_URI, {
